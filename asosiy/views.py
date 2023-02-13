@@ -23,3 +23,6 @@ def kundalik_edit(request,son):
         return redirect("/todo/")
     data={"todo":Kundalik.objects.get(id=son)}
     return render(request,"kundalik_edit.html",data)
+def kundalik_ochir(request,son):
+    data={"todo":Kundalik.objects.get(id=son).delete()}
+    return redirect("/todo/")
