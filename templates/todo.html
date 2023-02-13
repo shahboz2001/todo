@@ -60,13 +60,15 @@
     <div class="col-md-8">
       <div class="card">
         <center><b>Title of the todo</b></center>
+        {%for i in todo%}
         <hr/>
-        Todo time
+        {{i.vaqti}}
         <hr/>
-        Todo description
+        {{i.izoh}}
         <hr/>
-        Todo status
+        {{i.maqsad}}
         <br />
+        {%endfor%}
         <button class="btn btn-primary" style="float: right;"><span class="glyphicon glyphicon-trash"></span><a href="#">O'chirish</a></button>
       </div>
     </div>
