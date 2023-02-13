@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kundalik_edit</title>
+</head>
+<body>
+<br>
+<br>
+<br>
+<form method="POST">{%csrf_token%}
+    <label>Vaqtni ozgartirish</label>
+    <input type="datetime-local" name="v" value="{{todo.vaqti}}">
+    <label> textni ozgartirish</label>
+    <input type="text" name="i" value="{{todo.izoh}}">
+    <label> maqsadni ozgartirish</label>
+    <input type="text" name="m" value="{{todo.maqsad}}">
+    <button type="submit">Saqlash</button>
+</form>
+<a href="/todo/"> <button>orqaga</button></a>
+</body>
+</html>
