@@ -84,6 +84,21 @@
     </div>
   </div>
 </div>
+<br>
+<br>
+
+<form action="/todo/" method="POST">{%csrf_token%}
+  <input type="datetime-local" name="v" placeholder="vaqtni kiriting">
+  <input type="text" name="i" placeholder="textni kiriting">
+  <input type="text" name="m" placeholder="maqsadni kiriting">
+<button type="submit">Qoshish</button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+</form>
 </body>
 
 </html>
